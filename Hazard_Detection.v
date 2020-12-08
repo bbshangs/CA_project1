@@ -19,12 +19,15 @@ reg             PCWrite_o;
 reg             Stall_o;
 
 always @(*) begin
-    if (MemRead_i && (data1_i == data3_i || data2_i == data3_i))
+    if (MemRead_i && (data1_i == data3_i || data2_i == data3_i)) begin
         PCWrite_o <= 1'b0; // don't update PC
         Stall_o <= 1'b1; // do stall
-    else
+    end
+
+    else begin
         PCWrite_o <= 1'b1;
         Stall_o <= 1'b0;
+    end
 end
 
 endmodule

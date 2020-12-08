@@ -12,7 +12,7 @@ input                   Branch_i;
 output                  data_o;
 
 reg                     data_o;
-wire                    compare;
+reg                     compare;
 
 always @(*) begin
     if (data1_i == data2_i)
