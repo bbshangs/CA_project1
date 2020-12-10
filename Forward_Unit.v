@@ -27,18 +27,18 @@ always @(*) begin
 	ForwardB_o = 2'b00;
 
 	//EX-hazard
-	if (MemRegWrite_i and (MemRd_i != 5'b0) and (MemRd_i == EXRs1_i)) begin
+	if (MemRegWrite_i && (MemRd_i != 5'b0) && (MemRd_i == EXRs1_i)) begin
 		ForwardA_o = 2'b10;
 	end
-	if (MemRegWrite_i and (MemRd_i != 5'b0) and (MemRd_i == EXRs2_i)) begin
+	if (MemRegWrite_i && (MemRd_i != 5'b0) && (MemRd_i == EXRs2_i)) begin
 		ForwardB_o = 2'b10;
 	end
 
 	//MEM-Hazard
-	if (WBRegWrite_i and (WBRegWrite_i != 5'b0) and not (MemRegWrite_i and (MemRd_i != 5'b0) and (MemRd_i == EXRs1_i)) and (WBRd_i == EXRs1_i)) begin
+	if (WBRegWrite_i && (WBRegWrite_i != 5'b0) &&  !(MemRegWrite_i && (MemRd_i != 5'b0) && (MemRd_i == EXRs1_i)) && (WBRd_i == EXRs1_i)) begin
 		ForwardA_o = 2'b01;
 	end
-	if (WBRegWrite_i and (WBRegWrite_i != 5'b0) and not (MemRegWrite_i and (MemRd_i != 5'b0) and (MemRd_i == EXRs2_i)) and (WBRd_i == EXRs2_i)) begin
+	if (WBRegWrite_i && (WBRegWrite_i != 5'b0) &&  !(MemRegWrite_i && (MemRd_i != 5'b0) && (MemRd_i == EXRs2_i)) && (WBRd_i == EXRs2_i)) begin
 		ForwardB_o = 2'b01;
 	end
 end

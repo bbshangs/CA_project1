@@ -32,3 +32,4 @@ always @(posedge clk_i) begin
 	ReadData_o <= ReadData_i;
 	RDaddr_o <= RDaddr_i;
 end
+endmodule

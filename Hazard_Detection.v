@@ -9,9 +9,9 @@ module Hazard_Detection
     NoOp_o
 );
 
-input   [31:0]  data1_i;
-input   [31:0]  data2_i;
-input   [31:0]  data3_i;
+input   [4:0]  data1_i;
+input   [4:0]  data2_i;
+input   [4:0]  data3_i;
 input           MemRead_i;
 output          PCWrite_o;
 output          Stall_o;
