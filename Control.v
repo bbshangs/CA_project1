@@ -13,7 +13,7 @@ module Control(
 );
 
 input 	[6:0] 		Op_i;
-input 				NoOp_i;  
+input 				NoOp_i;
 
 output 	[1:0] 		ALUOp_o;
 output 				ALUSrc_o;
@@ -43,45 +43,55 @@ always @(*) begin
 	end
 	case(Op_i)
 		`R_OPCODE:
-			ALUOp_o = `R_ALUOP;
-			ALUSrc_o = `R_ALUSRC;
-			RegWrite_o = `R_REGWRITE;
-			MemtoReg_o = 1'b0;
-			MemRead_o = 1'b0;
-			MemWrite_o = 1'b0;
-			Branch_o = 1'b0;
+			begin
+				ALUOp_o = `R_ALUOP;
+				ALUSrc_o = `R_ALUSRC;
+				RegWrite_o = `R_REGWRITE;
+				MemtoReg_o = 1'b0;
+				MemRead_o = 1'b0;
+				MemWrite_o = 1'b0;
+				Branch_o = 1'b0;
+			end
 		`I_OPCODE:
-			ALUOp_o = `I_ALUOP;
-			ALUSrc_o = `I_ALUSRC;
-			RegWrite_o = `I_REGWRITE;
-			MemtoReg_o = 1'b0;
-			MemRead_o = 1'b0;
-			MemWrite_o = 1'b0;
-			Branch_o = 1'b0;
+			begin
+				ALUOp_o = `I_ALUOP;
+				ALUSrc_o = `I_ALUSRC;
+				RegWrite_o = `I_REGWRITE;
+				MemtoReg_o = 1'b0;
+				MemRead_o = 1'b0;
+				MemWrite_o = 1'b0;
+				Branch_o = 1'b0;
+			end
 		`LW_OPCODE:
-			ALUOp_o = `LW_ALUOP;
-			ALUSrc_o = `LW_ALUSRC;
-			RegWrite_o = `LW_REGWRITE;
-			MemtoReg_o = 1'b1;
-			MemRead_o = 1'b1;
-			MemWrite_o = 1'b0;
-			Branch_o = 1'b0;
+			begin
+				ALUOp_o = `LW_ALUOP;
+				ALUSrc_o = `LW_ALUSRC;
+				RegWrite_o = `LW_REGWRITE;
+				MemtoReg_o = 1'b1;
+				MemRead_o = 1'b1;
+				MemWrite_o = 1'b0;
+				Branch_o = 1'b0;
+			end
 		`SW_OPCODE:
-			ALUOp_o = `SW_ALUOP;
-			ALUSrc_o = `SW_ALUSRC;
-			RegWrite_o = `SW_REGWRITE;
-			MemtoReg_o = 1'b0;
-			MemRead_o = 1'b0;
-			MemWrite_o = 1'b1;
-			Branch_o = 1'b0;
+			begin
+				ALUOp_o = `SW_ALUOP;
+				ALUSrc_o = `SW_ALUSRC;
+				RegWrite_o = `SW_REGWRITE;
+				MemtoReg_o = 1'b0;
+				MemRead_o = 1'b0;
+				MemWrite_o = 1'b1;
+				Branch_o = 1'b0;
+			end
 		`BEQ_OPCODE:
-			ALUOp_o = `BEQ_ALUOP;
-			ALUSrc_o = `BEQ_ALUSRC;
-			RegWrite_o = `BEQ_REGWRITE;
-			MemtoReg_o = 1'b0;
-			MemRead_o = 1'b0;
-			MemWrite_o = 1'b0;
-			Branch_o = 1'b1;
+			begin
+				ALUOp_o = `BEQ_ALUOP;
+				ALUSrc_o = `BEQ_ALUSRC;
+				RegWrite_o = `BEQ_REGWRITE;
+				MemtoReg_o = 1'b0;
+				MemRead_o = 1'b0;
+				MemWrite_o = 1'b0;
+				Branch_o = 1'b1;
+			end
 	endcase
 end
 
