@@ -147,7 +147,8 @@ Hazard_Detection Hazard_Detection(
     .data3_i    (),
     .MemRead_i  (),
     .PCWrite_o  (),
-    .Stall_o    ()
+    .Stall_o    (),
+    .NoOp_o     ()
 );
 
 //bb
@@ -164,20 +165,26 @@ Forward_Unit Forward_Unit(
 
 //yufeng
 IFID IFID(
-    .PC_i       (),
+    .clk_i      (),
     .Stall_i    (),
     .Flush_i    (),
-    .data_o     ()
+    .PC_i       (),
+    .instr_i    (),
+    .PC_o       (),
+    .instr_o    ()
 );
 
 //yufeng
 IDEX IDEX(
+    .clk_i      (),
+    // Control Input 
     .ALUOp_i    (),
     .ALUSrc_i   (),
     .RegWrite_i (),
     .MemtoReg_i (),
     .MemRead_i  (),
     .MemWrite_i (),
+    // Register Data Input
     .data1_i    (),
     .data2_i    (),
     .imm_i      (),
@@ -185,12 +192,14 @@ IDEX IDEX(
     .RS1addr_i  (),
     .RS2addr_i  (),
     .RDaddr_i   (),
+    // Control Output 
     .ALUOp_o    (),
     .ALUSrc_o   (),
     .RegWrite_o (),
     .MemtoReg_o (),
     .MemRead_o  (),
     .MemWrite_o (),
+    // Register Data Output
     .data1_o    (),
     .data2_o    (),
     .imm_o      (),
@@ -202,6 +211,7 @@ IDEX IDEX(
 
 //yufeng
 EXMEM EXMEM(
+    .clk_i          (),
     .RegWrite_i     (),
     .MemtoReg_i     (),
     .MemRead_i      (),
@@ -220,6 +230,7 @@ EXMEM EXMEM(
 
 //yufeng
 MEMWB MEMWB(
+    .clk_i          (),
     .RegWrite_i     (),
     .MemtoReg_i     (),
     .ALUResult_i    (),
