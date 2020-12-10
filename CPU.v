@@ -68,7 +68,7 @@ Registers Registers(
 );
 
 //yufeng
-MUX32 MUX_ALUSrc( 
+MUX32 MUX_ALUSrc(
     .data1_i    (),
     .data2_i    (),
     .select_i   (),
@@ -132,8 +132,8 @@ ALU_Control ALU_Control(
 
 //ta
 Data_Memory Data_Memory(
-    .clk_i      (), 
-    .addr_i     (), 
+    .clk_i      (),
+    .addr_i     (),
     .MemRead_i  (),
     .MemWrite_i (),
     .data_i     (),
