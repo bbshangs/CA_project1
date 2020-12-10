@@ -61,7 +61,7 @@ Registers Registers(
     .RS1addr_i   (IFID.instr_o[19:15]),
     .RS2addr_i   (IFID.instr_o[24:20]),
     .RDaddr_i   (MEMWB.RDaddr_o),
-    .RDdata_i   (MEMWB.ReadData_o),
+    .RDdata_i   (MUX_Mem2Reg.data_o),
     .RegWrite_i (MEMWB.RegWrite_o),
     .RS1data_o   (),
     .RS2data_o   ()

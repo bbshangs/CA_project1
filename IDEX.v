@@ -49,7 +49,6 @@ reg 			[9:0]		funct_o;
 reg 			[4:0]		RS1addr_o, RS2addr_o, RDaddr_o;
 
 always @(posedge clk_i) begin
-	// Stall ?
 	// Control Signal
 	ALUOp_o <= ALUOp_i;
 	ALUSrc_o <= ALUSrc_i;
@@ -60,7 +59,7 @@ always @(posedge clk_i) begin
 
 	//Register Data
 	data1_o <= data1_i;
-	data2_o <= data2_o;
+	data2_o <= data2_i;
 	imm_o <= imm_i;
 	funct_o <= funct_i;
 	RS1addr_o <= RS1addr_i;
