@@ -9,7 +9,7 @@ module Forward_Unit(
     ForwardB_o
 );
 
-input			Mem.RegWrite_i;
+input			MemRegWrite_i;
 input	[4:0]	MemRd_i;
 input			WBRegWrite_i;
 input	[4:0]	WBRd_i;

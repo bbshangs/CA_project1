@@ -5,14 +5,13 @@ module Imm_Gen(
 	data_o
 );
 
-input [31:0] data_i;
-output [31:0] data_o;
+input signed	 [31:0] 	data_i;
+output signed	 [31:0] 	data_o;
 
-wire [6:0] opcode;
+wire			 [6:0] 		opcode;
+wire 			 [11:0] 	imme;
+
 assign opcode = data_i[6:0];
-
-wire [11:0] imme;
-
 assign imme = (opcode == `I_OPCODE)? data_i[31:20]:
 			(opcode == `LW_OPCODE)? data_i[31:20]:
 			(opcode == `SW_OPCODE)? {data_i[31:25], data_i[11:7]}:
