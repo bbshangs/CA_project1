@@ -5,7 +5,8 @@ module Hazard_Detection
     data3_i,
     MemRead_i,
     PCWrite_o,
-    Stall_o
+    Stall_o,
+    NoOp_o
 );
 
 input   [31:0]  data1_i;
