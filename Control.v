@@ -30,6 +30,15 @@ reg 				MemtoReg_o;
 reg 				MemRead_o;
 reg 				MemWrite_o;
 reg 				Branch_o;
+	
+initial begin
+	ALUSrc_o = 1'b0;
+	RegWrite_o = 1'b0;
+	MemtoReg_o = 1'b0;
+	MemRead_o = 1'b0;
+	MemWrite_o = 1'b0;
+	Branch_o = 1'b0;
+end
 
 always @(*) begin
 	if (NoOp_i) begin
