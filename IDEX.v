@@ -69,15 +69,3 @@ always @(posedge clk_i) begin
 end
 
 endmodule
-
-
-
-
-
-
-
-
-
-
-
-

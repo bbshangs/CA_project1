@@ -174,7 +174,7 @@ IFID IFID(
 //yufeng
 IDEX IDEX(
     .clk_i      (clk_i),
-    // Control Input 
+    // Control Input
     .ALUOp_i    (Control.ALUOp_o),
     .ALUSrc_i   (Control.ALUSrc_o),
     .RegWrite_i (Control.RegWrite_o),
@@ -182,14 +182,14 @@ IDEX IDEX(
     .MemRead_i  (Control.MemRead_o),
     .MemWrite_i (Control.MemWrite_o),
     // Register Data Input
-    .data1_i    (Register.RS1data_o),
-    .data2_i    (Register.RS2data_o),
+    .data1_i    (Registers.RS1data_o),
+    .data2_i    (Registers.RS2data_o),
     .imm_i      (Imm_Gen.data_o),
     .funct_i    ( {IFID.instr_o[31:25], IFID.instr_o[14:12]} ),
     .RS1addr_i  (IFID.instr_o[19:15]),
     .RS2addr_i  (IFID.instr_o[24:20]),
     .RDaddr_i   (IFID.instr_o[11:7]),
-    // Control Output 
+    // Control Output
     .ALUOp_o    (),
     .ALUSrc_o   (),
     .RegWrite_o (),
@@ -242,8 +242,8 @@ MEMWB MEMWB(
 
 //grace
 If_Branch If_Branch(
-    .data1_i    (Register.RS1data_o),
-    .data2_i    (Register.RS2data_o),
+    .data1_i    (Registers.RS1data_o),
+    .data2_i    (Registers.RS2data_o),
     .Branch_i   (Control.Branch_o),
     .data_o     ()
 );
