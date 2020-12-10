@@ -43,11 +43,40 @@ initial begin
     // [RegisterInitialization] DO NOT REMOVE THIS FLAG !!!
 
     // TODO: initialize your pipeline registers
+    CPU.IFID.PC_o = 32'b0;
+    CPU.IFID.instr_o = 32'b0;
 
-    
+    CPU.IDEX.ALUOp_o = 2'b0;
+    CPU.IDEX.ALUSrc_o = 1'b0;
+    CPU.IDEX.RegWrite_o = 1'b0;
+    CPU.IDEX.MemtoReg_o = 1'b0;
+    CPU.IDEX.MemRead_o = 1'b0;
+    CPU.IDEX.MemWrite_o = 1'b0;
+    CPU.IDEX.data1_o = 32'b0;
+    CPU.IDEX.data2_o = 32'b0;
+    CPU.IDEX.imm_o = 32'b0;
+    CPU.IDEX.funct_o = 10'b0;
+    CPU.IDEX.RS1addr_o = 5'b0;
+    CPU.IDEX.RS2addr_o = 5'b0;
+    CPU.IDEX.RDaddr_o = 5'b0;
+
+    CPU.EXMEM.RegWrite_o = 1'b0;
+    CPU.EXMEM.MemtoReg_o = 1'b0;
+    CPU.EXMEM.MemRead_o = 1'b0;
+    CPU.EXMEM.MemWrite_o = 1'b0;
+    CPU.EXMEM.ALUResult_o = 32'b0;
+    CPU.EXMEM.MUX_B_o = 32'b0;
+    CPU.EXMEM.RDaddr_o = 5'b0;
+
+    CPU.MEMWB.RegWrite_o = 1'b0;
+    CPU.MEMWB.MemtoReg_o = 1'b0;
+    CPU.MEMWB.ALUResult_o = 32'b0;
+    CPU.MEMWB.ReadData_o = 32'b0;
+    CPU.MEMWB.RDaddr_o = 5'b0;
+
     // Load instructions into instruction memory
     // Make sure you change back to "instruction.txt" before submission
-    $readmemb("instruction.txt", CPU.Instruction_Memory.memory);
+    $readmemb("testdata_2020/instruction_1.txt", CPU.Instruction_Memory.memory);
     
     // Open output file
     // Make sure you change back to "output.txt" before submission
@@ -70,7 +99,7 @@ always@(posedge Clk) begin
 
     // put in your own signal to count stall and flush
     if(CPU.Hazard_Detection.Stall_o == 1 && CPU.Control.Branch_o == 0)stall = stall + 1;
-    if(CPU.Flush == 1)flush = flush + 1;  
+    if(CPU.If_Branch.data_o == 1)flush = flush + 1;  
 
     // print PC
     // DO NOT CHANGE THE OUTPUT FORMAT
