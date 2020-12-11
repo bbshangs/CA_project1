@@ -12,7 +12,6 @@ input               clk_i;
 input               rst_i;
 input               start_i;
 
-//yufeng
 Control Control(
     .Op_i       (IFID.instr_o[6:0]),
     .NoOp_i     (Hazard_Detection.NoOp_o),
@@ -25,21 +24,18 @@ Control Control(
     .Branch_o   ()
 );
 
-//grace
 Adder Add_PC(
     .data1_i   (PC.pc_o),
     .data2_i   (32'd4),
     .data_o     ()
 );
 
-//grace
 Adder Add_PC_Branch(
     .data1_i   (Imm_Gen.data_o<<1),
     .data2_i   (IFID.PC_o),
     .data_o    ()
 );
 
-//ta
 PC PC(
     .clk_i      (clk_i),
     .rst_i      (rst_i),
@@ -49,13 +45,11 @@ PC PC(
     .pc_o       ()
 );
 
-//ta
 Instruction_Memory Instruction_Memory(
     .addr_i     (PC.pc_o),
     .instr_o    ()
 );
 
-//ta
 Registers Registers(
     .clk_i      (clk_i),
     .RS1addr_i   (IFID.instr_o[19:15]),
@@ -74,7 +68,6 @@ MUX32 MUX_ALUSrc(
     .data_o     ()
 );
 
-//yufeng
 MUX32 MUX_Mem2Reg(
     .data1_i   (MEMWB.ALUResult_o),
     .data2_i   (MEMWB.ReadData_o),
@@ -82,7 +75,6 @@ MUX32 MUX_Mem2Reg(
     .data_o     ()
 );
 
-//yufeng
 MUX32 MUX_PCSource(
     .data1_i   (Add_PC.data_o),
     .data2_i   (Add_PC_Branch.data_o),
@@ -90,7 +82,6 @@ MUX32 MUX_PCSource(
     .data_o     ()
 );
 
-//bb
 MUX2 MUX_A(
     .data0_i  (IDEX.data1_o),
     .data1_i  (MUX_Mem2Reg.data_o),
@@ -99,7 +90,6 @@ MUX2 MUX_A(
     .data_o    ()
 );
 
-//bb
 MUX2 MUX_B(
     .data0_i  (IDEX.data2_o),
     .data1_i  (MUX_Mem2Reg.data_o),
@@ -108,13 +98,11 @@ MUX2 MUX_B(
     .data_o    ()
 );
 
-//yufeng
 Imm_Gen Imm_Gen(
     .data_i     (IFID.instr_o),
     .data_o     ()
 );
 
-//yufeng
 ALU ALU(
     .data1_i    (MUX_A.data_o),
     .data2_i    (MUX_ALUSrc.data_o),
@@ -122,14 +110,12 @@ ALU ALU(
     .data_o     ()
 );
 
-//yufeng
 ALU_Control ALU_Control(
     .funct_i    (IDEX.funct_o),
     .ALUOp_i    (IDEX.ALUOp_o),
     .ALUCtrl_o  ()
 );
 
-//ta
 Data_Memory Data_Memory(
     .clk_i      (clk_i),
     .addr_i     (EXMEM.ALUResult_o),
@@ -160,7 +146,6 @@ Forward_Unit Forward_Unit(
     .ForwardB_o     ()
 );
 
-//yufeng
 IFID IFID(
     .clk_i      (clk_i),
     .Stall_i    (Hazard_Detection.Stall_o),
@@ -171,7 +156,6 @@ IFID IFID(
     .instr_o    ()
 );
 
-//yufeng
 IDEX IDEX(
     .clk_i      (clk_i),
     // Control Input
@@ -206,7 +190,6 @@ IDEX IDEX(
     .RDaddr_o   ()
 );
 
-//yufeng
 EXMEM EXMEM(
     .clk_i          (clk_i),
     .RegWrite_i     (IDEX.RegWrite_o),
@@ -225,7 +208,6 @@ EXMEM EXMEM(
     .RDaddr_o       ()
 );
 
-//yufeng
 MEMWB MEMWB(
     .clk_i          (clk_i),
     .RegWrite_i     (EXMEM.RegWrite_o),
@@ -240,7 +222,6 @@ MEMWB MEMWB(
     .RDaddr_o       ()
 );
 
-//grace
 If_Branch If_Branch(
     .data1_i    (Registers.RS1data_o),
     .data2_i    (Registers.RS2data_o),
