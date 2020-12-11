@@ -118,17 +118,19 @@ always@(posedge Clk) begin
     $fdisplay(outfile, "x7 = %d, x15 = %d, x23 = %d, x31 = %d", CPU.Registers.register[7], CPU.Registers.register[15], CPU.Registers.register[23], CPU.Registers.register[31]);
 
     ///////
-    $fdisplay(outfile, "IFID.instr_o = %b\n", CPU.IFID.instr_o);
-    $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d, IDEX.imm_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o, CPU.IDEX.imm_o);
-    $fdisplay(outfile, "EXMEM.ALUResult_o = %d\n", CPU.EXMEM.ALUResult_o);
-    $fdisplay(outfile, "MEMWB.ALUResult_o = %d\n", CPU.MEMWB.ALUResult_o);
-    $fdisplay(outfile, "MEMWB.MemtoReg_o = %d\n", CPU.MEMWB.MemtoReg_o);
+    // $fdisplay(outfile, "IFID.instr_o = %b\n", CPU.IFID.instr_o);
+    // $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d, IDEX.imm_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o, CPU.IDEX.imm_o);
+    // $fdisplay(outfile, "EXMEM.ALUResult_o = %d\n", CPU.EXMEM.ALUResult_o);
+    // $fdisplay(outfile, "MEMWB.ALUResult_o = %d\n", CPU.MEMWB.ALUResult_o);
 
-    $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b\n", CPU.Instruction_Memory.instr_o);
-    $fdisplay(outfile, "addr_i = %d\n", CPU.PC.pc_o);
+    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b\n", CPU.Instruction_Memory.instr_o);
+    // $fdisplay(outfile, "addr_i = %d\n", CPU.PC.pc_o);
 
-    $fdisplay(outfile, "memory = %b\n", CPU.Instruction_Memory.memory[CPU.PC.pc_o]);
+    // $fdisplay(outfile, "memory = %b\n", CPU.Instruction_Memory.memory[CPU.PC.pc_o]);
 
+    // for (i = 0; i < 32; i++) begin
+    //     $fdisplay(outfile, "Data Memory: %d = %10d", i, CPU.Data_Memory.memory[i]);
+    // end
 
     // print Data Memory
     // DO NOT CHANGE THE OUTPUT FORMAT
