@@ -119,9 +119,13 @@ always@(posedge Clk) begin
 
     ///////
     // $fdisplay(outfile, "PC = %b\n", CPU.PC.pc_o);
-    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b\n", CPU.Instruction_Memory.instr_o);
+    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b", CPU.Instruction_Memory.instr_o);
     // $fdisplay(outfile, "IFID.instr_o = %b\n", CPU.IFID.instr_o);
-    // $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d, IDEX.imm_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o, CPU.IDEX.imm_o);
+
+    // $fdisplay(outfile, "Register: RS1data_o = %d, RS2data_o = %d\n", CPU.Registers.RS1data_o, CPU.Registers.RS2data_o);
+    // $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o);
+    // $fdisplay(outfile, "IDEX: RS1addr_o = %d, RS2addr_o = %d, RDaddr_o = %d\n", CPU.IDEX.RS1addr_o, CPU.IDEX.RS2addr_o, CPU.IDEX.RDaddr_o);
+    
     // $fdisplay(outfile, "EXMEM.ALUResult_o = %d\n", CPU.EXMEM.ALUResult_o);
     // $fdisplay(outfile, "MEMWB.ALUResult_o = %d\n", CPU.MEMWB.ALUResult_o);
 

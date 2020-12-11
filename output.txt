@@ -9,10 +9,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =          0, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000111100000000001100010011
-
-IFID.instr_o = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =          0
 Data Memory: 0x08 =          0
@@ -34,10 +30,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =          0, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011000000010001000100011
-
-IFID.instr_o = 00000000111100000000001100010011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =          0
 Data Memory: 0x08 =          0
@@ -59,10 +51,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =          0, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000101010111100000011
-
-IFID.instr_o = 00000000011000000010001000100011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =          0
 Data Memory: 0x08 =          0
@@ -84,10 +72,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =          0, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000011111000110000001010110011
-
-IFID.instr_o = 00000000000000101010111100000011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =          0
 Data Memory: 0x08 =          0
@@ -109,10 +93,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =          0, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000101100001110110011
-
-IFID.instr_o = 00000011111000110000001010110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =          0
 Data Memory: 0x08 =          0
@@ -134,10 +114,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000101100001110110011
-
-IFID.instr_o = 00000011111000110000001010110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =          0
@@ -159,10 +135,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          0
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011100000010010000100011
-
-IFID.instr_o = 00000000000000101100001110110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =          0
@@ -184,10 +156,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          5
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011000110000001100110011
-
-IFID.instr_o = 00000000011100000010010000100011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =          0
@@ -209,10 +177,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =          0, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          5
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011000110000001100110011
-
-IFID.instr_o = 00000000011000110000001100110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =          0
@@ -234,10 +198,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          5
 x7 =          0, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000100000000010111010000011
-
-IFID.instr_o = 00000000011000110000001100110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =          0
@@ -259,10 +219,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000001110100110111111000110011
-
-IFID.instr_o = 00000000100000000010111010000011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -284,10 +240,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =          0
 x6 =         15, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 11111111000000110000001110010011
-
-IFID.instr_o = 00000001110100110111111000110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -309,10 +261,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =          0
 x6 =         30, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 11111111000000110000001110010011
-
-IFID.instr_o = 00000001110100110111111000110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -334,10 +282,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =          0
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000001000000000111000010011
-
-IFID.instr_o = 11111111000000110000001110010011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -359,10 +303,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000110000000010111100000011
-
-IFID.instr_o = 00000000001000000000111000010011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -380,14 +320,10 @@ x0 =          0, x8  =          0, x16 =          0, x24 =          0
 x1 =          0, x9  =          0, x17 =          0, x25 =          0
 x2 =          0, x10 =          0, x18 =          0, x26 =          0
 x3 =          0, x11 =          0, x19 =          0, x27 =          0
-x4 =          0, x12 =          0, x20 =          0, x28 =          8
+x4 =          0, x12 =          0, x20 =          0, x28 =          0
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000001111000101100001110110011
-
-IFID.instr_o = 00000000110000000010111100000011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -409,10 +345,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          8
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011100101000111110110011
-
-IFID.instr_o = 00000001111000101100001110110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -434,10 +366,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          8
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         44, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000011100101000111110110011
-
-IFID.instr_o = 00000001111000101100001110110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -459,10 +387,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          5
 x7 =         44, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000011100101000111110110011
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -484,10 +408,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         44, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -508,11 +428,7 @@ x3 =          0, x11 =          0, x19 =          0, x27 =          0
 x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
-x7 =         71, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
+x7 =         44, x15 =          0, x23 =          0, x31 =          0
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -534,10 +450,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =          0
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -559,10 +471,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -584,10 +492,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -609,10 +513,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -634,10 +534,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -659,10 +555,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -684,10 +576,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -709,10 +597,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -734,10 +618,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -759,10 +639,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -784,10 +660,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -809,10 +681,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -834,10 +702,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -859,10 +723,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -884,10 +744,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -909,10 +765,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -934,10 +786,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -959,10 +807,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -984,10 +828,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1009,10 +849,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1034,10 +870,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1059,10 +891,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1084,10 +912,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1109,10 +933,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1134,10 +954,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1159,10 +975,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1184,10 +996,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1209,10 +1017,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1234,10 +1038,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1259,10 +1059,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1284,10 +1080,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1309,10 +1101,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1334,10 +1122,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1359,10 +1143,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1384,10 +1164,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1409,10 +1185,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1434,10 +1206,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1459,10 +1227,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1484,10 +1248,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1509,10 +1269,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1534,10 +1290,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1559,10 +1311,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75
@@ -1584,10 +1332,6 @@ x4 =          0, x12 =          0, x20 =          0, x28 =          2
 x5 =         75, x13 =          0, x21 =          0, x29 =         75
 x6 =         60, x14 =          0, x22 =          0, x30 =          0
 x7 =         75, x15 =          0, x23 =          0, x31 =        150
-CPU.Instruction_Memory.instr_o = 00000000000000000000000000000000
-
-IFID.instr_o = 00000000000000000000000000000000
-
 Data Memory: 0x00 =          5
 Data Memory: 0x04 =         15
 Data Memory: 0x08 =         75

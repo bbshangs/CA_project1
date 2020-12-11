@@ -50,67 +50,69 @@ always @(*) begin
 		MemWrite_o = 1'b0;
 		Branch_o = 1'b0;
 	end
-	case(Op_i)
-		`R_OPCODE:
-			begin
-				ALUOp_o = `R_ALUOP;
-				ALUSrc_o = `R_ALUSRC;
-				RegWrite_o = `R_REGWRITE;
-				MemtoReg_o = 1'b0;
-				MemRead_o = 1'b0;
-				MemWrite_o = 1'b0;
-				Branch_o = 1'b0;
-			end
-		`I_OPCODE:
-			begin
-				ALUOp_o = `I_ALUOP;
-				ALUSrc_o = `I_ALUSRC;
-				RegWrite_o = `I_REGWRITE;
-				MemtoReg_o = 1'b0;
-				MemRead_o = 1'b0;
-				MemWrite_o = 1'b0;
-				Branch_o = 1'b0;
-			end
-		`LW_OPCODE:
-			begin
-				ALUOp_o = `LW_ALUOP;
-				ALUSrc_o = `LW_ALUSRC;
-				RegWrite_o = `LW_REGWRITE;
-				MemtoReg_o = 1'b1;
-				MemRead_o = 1'b1;
-				MemWrite_o = 1'b0;
-				Branch_o = 1'b0;
-			end
-		`SW_OPCODE:
-			begin
-				ALUOp_o = `SW_ALUOP;
-				ALUSrc_o = `SW_ALUSRC;
-				RegWrite_o = `SW_REGWRITE;
-				MemtoReg_o = 1'b0;
-				MemRead_o = 1'b0;
-				MemWrite_o = 1'b1;
-				Branch_o = 1'b0;
-			end
-		`BEQ_OPCODE:
-			begin
-				ALUOp_o = `BEQ_ALUOP;
-				ALUSrc_o = `BEQ_ALUSRC;
-				RegWrite_o = `BEQ_REGWRITE;
-				MemtoReg_o = 1'b0;
-				MemRead_o = 1'b0;
-				MemWrite_o = 1'b0;
-				Branch_o = 1'b1;
-			end
-		default:
-			begin
-				ALUSrc_o = 1'b0;
-				RegWrite_o = 1'b0;
-				MemtoReg_o = 1'b0;
-				MemRead_o = 1'b0;
-				MemWrite_o = 1'b0;
-				Branch_o = 1'b0;
-			end
-	endcase
+	else begin
+		case(Op_i)
+			`R_OPCODE:
+				begin
+					ALUOp_o = `R_ALUOP;
+					ALUSrc_o = `R_ALUSRC;
+					RegWrite_o = `R_REGWRITE;
+					MemtoReg_o = 1'b0;
+					MemRead_o = 1'b0;
+					MemWrite_o = 1'b0;
+					Branch_o = 1'b0;
+				end
+			`I_OPCODE:
+				begin
+					ALUOp_o = `I_ALUOP;
+					ALUSrc_o = `I_ALUSRC;
+					RegWrite_o = `I_REGWRITE;
+					MemtoReg_o = 1'b0;
+					MemRead_o = 1'b0;
+					MemWrite_o = 1'b0;
+					Branch_o = 1'b0;
+				end
+			`LW_OPCODE:
+				begin
+					ALUOp_o = `LW_ALUOP;
+					ALUSrc_o = `LW_ALUSRC;
+					RegWrite_o = `LW_REGWRITE;
+					MemtoReg_o = 1'b1;
+					MemRead_o = 1'b1;
+					MemWrite_o = 1'b0;
+					Branch_o = 1'b0;
+				end
+			`SW_OPCODE:
+				begin
+					ALUOp_o = `SW_ALUOP;
+					ALUSrc_o = `SW_ALUSRC;
+					RegWrite_o = `SW_REGWRITE;
+					MemtoReg_o = 1'b0;
+					MemRead_o = 1'b0;
+					MemWrite_o = 1'b1;
+					Branch_o = 1'b0;
+				end
+			`BEQ_OPCODE:
+				begin
+					ALUOp_o = `BEQ_ALUOP;
+					ALUSrc_o = `BEQ_ALUSRC;
+					RegWrite_o = `BEQ_REGWRITE;
+					MemtoReg_o = 1'b0;
+					MemRead_o = 1'b0;
+					MemWrite_o = 1'b0;
+					Branch_o = 1'b1;
+				end
+			default:
+				begin
+					ALUSrc_o = 1'b0;
+					RegWrite_o = 1'b0;
+					MemtoReg_o = 1'b0;
+					MemRead_o = 1'b0;
+					MemWrite_o = 1'b0;
+					Branch_o = 1'b0;
+				end
+		endcase
+	end
 end
 
 endmodule
