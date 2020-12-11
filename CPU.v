@@ -34,7 +34,7 @@ Adder Add_PC(
 
 //grace
 Adder Add_PC_Branch(
-    .data1_i   (Imm_Gen.data_i<<1),
+    .data1_i   (Imm_Gen.data_o<<1),
     .data2_i   (IFID.PC_o),
     .data_o    ()
 );

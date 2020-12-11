@@ -76,7 +76,7 @@ initial begin
 
     // Load instructions into instruction memory
     // Make sure you change back to "instruction.txt" before submission
-    $readmemb("testdata_2020/instruction_3.txt", CPU.Instruction_Memory.memory);
+    $readmemb("testdata_2020/instruction_4.txt", CPU.Instruction_Memory.memory);
 
     // Open output file
     // Make sure you change back to "output.txt" before submission
@@ -116,26 +116,6 @@ always@(posedge Clk) begin
     $fdisplay(outfile, "x5 = %d, x13 = %d, x21 = %d, x29 = %d", CPU.Registers.register[5], CPU.Registers.register[13], CPU.Registers.register[21], CPU.Registers.register[29]);
     $fdisplay(outfile, "x6 = %d, x14 = %d, x22 = %d, x30 = %d", CPU.Registers.register[6], CPU.Registers.register[14], CPU.Registers.register[22], CPU.Registers.register[30]);
     $fdisplay(outfile, "x7 = %d, x15 = %d, x23 = %d, x31 = %d", CPU.Registers.register[7], CPU.Registers.register[15], CPU.Registers.register[23], CPU.Registers.register[31]);
-
-    ///////
-    // $fdisplay(outfile, "PC = %b\n", CPU.PC.pc_o);
-    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b", CPU.Instruction_Memory.instr_o);
-    // $fdisplay(outfile, "IFID.instr_o = %b\n", CPU.IFID.instr_o);
-
-    // $fdisplay(outfile, "Register: RS1data_o = %d, RS2data_o = %d\n", CPU.Registers.RS1data_o, CPU.Registers.RS2data_o);
-    // $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o);
-    // $fdisplay(outfile, "IDEX: RS1addr_o = %d, RS2addr_o = %d, RDaddr_o = %d\n", CPU.IDEX.RS1addr_o, CPU.IDEX.RS2addr_o, CPU.IDEX.RDaddr_o);
-    
-    // $fdisplay(outfile, "EXMEM.ALUResult_o = %d\n", CPU.EXMEM.ALUResult_o);
-    // $fdisplay(outfile, "MEMWB.ALUResult_o = %d\n", CPU.MEMWB.ALUResult_o);
-
-    // $fdisplay(outfile, "addr_i = %d\n", CPU.PC.pc_o);
-
-    // $fdisplay(outfile, "memory = %b\n", CPU.Instruction_Memory.memory[CPU.PC.pc_o]);
-
-    // for (i = 0; i < 32; i++) begin
-    //     $fdisplay(outfile, "Data Memory: %d = %10d", i, CPU.Data_Memory.memory[i]);
-    // end
 
     // print Data Memory
     // DO NOT CHANGE THE OUTPUT FORMAT

@@ -22,7 +22,7 @@
 `define I_REGWRITE 1'b1
 `define LW_REGWRITE 1'b1
 `define SW_REGWRITE 1'b0
-`define BEQ_REGWRITE 1'b1
+`define BEQ_REGWRITE 1'b0
 
 `define FUNCT_AND 10'b0000000_111
 `define FUNCT_XOR 10'b0000000_100
@@ -43,6 +43,3 @@
 `define SRAI 3'b100
 `define LWSW 3'b010
 `define BEQ 3'b110
-
-
-
