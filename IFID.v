@@ -20,11 +20,11 @@ reg		[31:0]	PC_o;
 reg 	[31:0]	instr_o;
 
 always @(posedge clk_i) begin
-	if (Stall_i) begin   
+	if (Stall_i) begin
 		PC_o <= 32'b0;
-		instr_o <= 32'b0;
+		instr_o <= instr_o;
 	end
-	else begin   		
+	else begin
 		PC_o <= PC_i;
 		if (Flush_i) begin
 			instr_o <= 32'b0;

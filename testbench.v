@@ -1,4 +1,4 @@
-`define CYCLE_TIME 50            
+`define CYCLE_TIME 50
 
 module TestBench;
 
@@ -9,33 +9,33 @@ integer            i, outfile, counter;
 integer            stall, flush;
 parameter          num_cycles = 64;
 
-always #(`CYCLE_TIME/2) Clk = ~Clk;    
+always #(`CYCLE_TIME/2) Clk = ~Clk;
 
 CPU CPU(
     .clk_i  (Clk),
     .start_i(Start),
     .rst_i  (Reset)
 );
-  
+
 initial begin
     $dumpfile("CPU.vcd");
     $dumpvars;
     counter = 0;
     stall = 0;
     flush = 0;
-    
+
     // initialize instruction memory
     for(i=0; i<256; i=i+1) begin
         CPU.Instruction_Memory.memory[i] = 32'b0;
     end
-    
+
     // initialize data memory
     for(i=0; i<32; i=i+1) begin
         CPU.Data_Memory.memory[i] = 32'b0;
-    end    
+    end
     CPU.Data_Memory.memory[0] = 5;
     // [D-MemoryInitialization] DO NOT REMOVE THIS FLAG !!!
-        
+
     // initialize Register File
     for(i=0; i<32; i=i+1) begin
         CPU.Registers.register[i] = 32'b0;
@@ -76,35 +76,35 @@ initial begin
 
     // Load instructions into instruction memory
     // Make sure you change back to "instruction.txt" before submission
-    $readmemb("testdata_2020/instruction_1.txt", CPU.Instruction_Memory.memory);
-    
+    $readmemb("testdata_2020/instruction_3.txt", CPU.Instruction_Memory.memory);
+
     // Open output file
     // Make sure you change back to "output.txt" before submission
     outfile = $fopen("output.txt") | 1;
-    
+
     Clk = 1;
     Reset = 1;
     Start = 0;
-    
-    #(`CYCLE_TIME/4) 
+
+    #(`CYCLE_TIME/4)
     Reset = 0;
     Start = 1;
-        
-    
+
+
 end
-  
+
 always@(posedge Clk) begin
     if(counter == num_cycles)    // stop after num_cycles cycles
         $finish;
 
     // put in your own signal to count stall and flush
     if(CPU.Hazard_Detection.Stall_o == 1 && CPU.Control.Branch_o == 0)stall = stall + 1;
-    if(CPU.If_Branch.data_o == 1)flush = flush + 1;  
+    if(CPU.If_Branch.data_o == 1)flush = flush + 1;
 
     // print PC
     // DO NOT CHANGE THE OUTPUT FORMAT
     $fdisplay(outfile, "cycle = %d, Start = %0d, Stall = %0d, Flush = %0d\nPC = %d", counter, Start, stall, flush, CPU.PC.pc_o);
-    
+
     // print Registers
     // DO NOT CHANGE THE OUTPUT FORMAT
     $fdisplay(outfile, "Registers");
@@ -118,12 +118,13 @@ always@(posedge Clk) begin
     $fdisplay(outfile, "x7 = %d, x15 = %d, x23 = %d, x31 = %d", CPU.Registers.register[7], CPU.Registers.register[15], CPU.Registers.register[23], CPU.Registers.register[31]);
 
     ///////
+    // $fdisplay(outfile, "PC = %b\n", CPU.PC.pc_o);
+    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b\n", CPU.Instruction_Memory.instr_o);
     // $fdisplay(outfile, "IFID.instr_o = %b\n", CPU.IFID.instr_o);
     // $fdisplay(outfile, "IDEX.data1_o = %d, IDEX.data2_o = %d, IDEX.imm_o = %d\n", CPU.IDEX.data1_o, CPU.IDEX.data2_o, CPU.IDEX.imm_o);
     // $fdisplay(outfile, "EXMEM.ALUResult_o = %d\n", CPU.EXMEM.ALUResult_o);
     // $fdisplay(outfile, "MEMWB.ALUResult_o = %d\n", CPU.MEMWB.ALUResult_o);
 
-    // $fdisplay(outfile, "CPU.Instruction_Memory.instr_o = %b\n", CPU.Instruction_Memory.instr_o);
     // $fdisplay(outfile, "addr_i = %d\n", CPU.PC.pc_o);
 
     // $fdisplay(outfile, "memory = %b\n", CPU.Instruction_Memory.memory[CPU.PC.pc_o]);
@@ -144,11 +145,11 @@ always@(posedge Clk) begin
     $fdisplay(outfile, "Data Memory: 0x1C = %10d", CPU.Data_Memory.memory[7]);
 
     $fdisplay(outfile, "\n");
-    
+
     counter = counter + 1;
-    
-      
+
+
 end
 
-  
+
 endmodule
